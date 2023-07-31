@@ -199,7 +199,7 @@ oc apply -f mysql-restore.yaml
 We can check when the restore is completed by running the following. The restore is complete when `Phase:` is `Completed`.
 [source,bash,role=execute]
 ----
-velero restore describe mysql-restore && velero restore describe mysql-restore | grep Phase: 
+velero restore describe mysql-restore && velero restore describe mysql-restore | grep Phase:
 ----
 
 Wait until pods become available.
